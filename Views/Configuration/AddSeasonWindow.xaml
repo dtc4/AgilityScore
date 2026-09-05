@@ -1,0 +1,53 @@
+﻿<Window x:Class="AgilityScore.Views.Configuration.AddSeasonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nueva Temporada"
+        Height="400"
+        Width="450"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#ECF0F1">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBlock Text="Detalles de la Temporada"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Margin="0,0,0,20"
+                       Foreground="#2C3E50"/>
+
+            <Label Content="Nombre:"/>
+            <TextBox x:Name="TxtName" Margin="0,0,0,10"/>
+
+            <Label Content="Fecha de inicio:"/>
+            <DatePicker x:Name="DpStart" Margin="0,0,0,10"/>
+
+            <Label Content="Fecha de fin:"/>
+            <DatePicker x:Name="DpEnd" Margin="0,0,0,10"/>
+
+            <Label Content="Número de jornadas:"/>
+            <TextBox x:Name="TxtDays" Margin="0,0,0,10"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,20,0,0">
+            <Button Content="Cancelar"
+                    Width="100"
+                    Margin="0,0,10,0"
+                    Click="BtnCancel_Click"/>
+            <Button Content="Guardar"
+                    Width="100"
+                    Background="#27AE60"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    Click="BtnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

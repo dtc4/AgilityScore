@@ -1,0 +1,75 @@
+﻿<Window x:Class="AgilityScore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AgilityScore"
+        Height="600" Width="950"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Background="#ECF0F1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- 🟦 Barra superior -->
+        <Border Grid.Row="0" Grid.ColumnSpan="2" Background="#2C3E50">
+            <TextBlock Text="🐾 AgilityScore"
+                       Foreground="White"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       Margin="15,0,0,0"/>
+        </Border>
+
+        <!-- 🟨 Menú lateral -->
+        <ScrollViewer Grid.Row="1" Grid.Column="0" Background="#34495E" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="5,10">
+
+                <!-- 🔧 CONFIGURACIÓN -->
+                <Expander Header="⚙️ Configuración"
+                  Foreground="White"
+                  FontWeight="Bold"
+                  IsExpanded="True"
+                  Background="#2C3E50"
+                  BorderBrush="#2C3E50">
+                    <StackPanel>
+                        <Button Content="📅 Temporadas" Height="40" Margin="5" Click="BtnSeasons_Click"/>
+                        <Button Content="📆 Jornadas" Height="40" Margin="5"  Click="BtnEventDays_Click"/>
+                        <Button Content="📊 Participantes" Height="40" Margin="5" />
+                        <Button Content="👤 Guías" Height="40" Margin="5" />
+                        <Button Content="🐶 Perros" Height="40" Margin="5" />
+                    </StackPanel>
+                </Expander>
+
+                <!-- 🏆 COMPETICIÓN -->
+                <Expander Header="🏆 Competición"
+                  Foreground="White"
+                  FontWeight="Bold"
+                  IsExpanded="True"
+                  Background="#2C3E50"
+                  BorderBrush="#2C3E50"
+                  Margin="0,10,0,0">
+                    <StackPanel>
+                        <Button Content="⏱️ Calificación" Height="40" Margin="5" />
+                        <Button Content="🏅 Clasificaciones" Height="40" Margin="5"/>
+                    </StackPanel>
+                </Expander>
+
+            </StackPanel>
+        </ScrollViewer>
+
+
+        <!-- 🟩 Zona principal -->
+        <ContentControl x:Name="MainContent"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Margin="10"/>
+    </Grid>
+</Window>

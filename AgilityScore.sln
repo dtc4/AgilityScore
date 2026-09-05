@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgilityScore", "AgilityScore.csproj", "{4C25D9AA-F925-4C45-BA78-C1C4C8D21A19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C25D9AA-F925-4C45-BA78-C1C4C8D21A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C25D9AA-F925-4C45-BA78-C1C4C8D21A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C25D9AA-F925-4C45-BA78-C1C4C8D21A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C25D9AA-F925-4C45-BA78-C1C4C8D21A19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EED262F-DA1F-43FC-A5F4-3DEF01141239}
+	EndGlobalSection
+EndGlobal
